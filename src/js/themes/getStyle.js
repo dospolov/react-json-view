@@ -231,7 +231,9 @@ const getDefaultThemeStyling = theme => {
         },
         'copy-icon-copied': {
             color: colors.copyToClipboardCheck,
-            marginLeft: constants.clipboardCheckMarginLeft
+            fontSize: constants.iconFontSize,
+            marginRight: constants.iconMarginRight,
+            verticalAlign: 'top'
         },
         'array-group-meta-data': {
             display: 'inline-block',

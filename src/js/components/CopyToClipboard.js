@@ -3,7 +3,7 @@ import React from 'react';
 import { toType } from './../helpers/util';
 
 //clibboard icon
-import { Clippy } from './icons';
+import { Clippy, ClippyCopied } from './icons';
 
 //theme
 import Theme from './../themes/getStyle';
@@ -65,10 +65,10 @@ export default class extends React.PureComponent {
 
         if (this.state.copied) {
             return (
-                <span>
-                    <Clippy class="copy-icon" {...Theme(theme, 'copy-icon')} />
-                    <span {...Theme(theme, 'copy-icon-copied')}>✔</span>
-                </span>
+                <ClippyCopied
+                    class="copy-icon"
+                    {...Theme(theme, 'copy-icon-copied')}
+                />
             );
         }
 

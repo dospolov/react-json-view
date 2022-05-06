@@ -156,6 +156,28 @@ export class Clippy extends React.PureComponent {
     }
 }
 
+export class ClippyCopied extends React.PureComponent {
+    render() {
+        const { props } = this;
+        const { style, ...rest } = props;
+
+        return (
+            <span {...rest}>
+                <svg
+                    {...getIconStyle(style)}
+                    viewBox="0 0 40 40"
+                    fill="currentColor"
+                    preserveAspectRatio="xMidYMid meet"
+                >
+                    <g>
+                        <path d="M28 35H3V12.5H28V15H30.5V7.5C30.5 6.1 29.4 5 28 5H20.5C20.5 2.2 18.3 0 15.5 0C12.7 0 10.5 2.2 10.5 5H3C1.6 5 0.5 6.1 0.5 7.5V35C0.5 36.4 1.6 37.5 3 37.5H28C29.4 37.5 30.5 36.4 30.5 35V30H28V35ZM8 7.5H10.5C10.5 7.5 13 6.4 13 5C13 3.6 14.1 2.5 15.5 2.5C16.9 2.5 18 3.6 18 5C18 6.4 19.3 7.5 20.5 7.5H23C23 7.5 25.5 8.6 25.5 10H5.5C5.5 8.5 6.6 7.5 8 7.5ZM5.5 27.5H10.5V25H5.5V27.5ZM17 20H14L20.5 32.5H23L29 17.5H26L21.5 29.5L17 20ZM5.5 32.5H13V30H5.5V32.5ZM18 15H5.5V17.5H18V15ZM10.5 20H5.5V22.5H10.5V20Z" />
+                    </g>
+                </svg>
+            </span>
+        );
+    }
+}
+
 export class RemoveCircle extends React.PureComponent {
     render() {
         const { props } = this;
