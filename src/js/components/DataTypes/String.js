@@ -1,4 +1,5 @@
 import React from 'react';
+import { Anchorme } from 'react-anchorme';
 import DataTypeLabel from './DataTypeLabel';
 import { toType } from './../../helpers/util';
 
@@ -66,7 +67,13 @@ export default class extends React.PureComponent {
                     {...style}
                     onClick={this.toggleCollapsed}
                 >
-                    "{value}"
+                    "
+                    {
+                        <Anchorme target="_blank" rel="noreferrer noopener">
+                            {value}
+                        </Anchorme>
+                    }
+                    "
                 </span>
             </div>
         );

@@ -179,11 +179,11 @@ ReactDom.render(
 //just a function to get an example JSON object
 function getExampleJson1() {
     return {
-        string: 'this is a test string',
+        string: 'this is a test string with test url http://localhost:2000',
         integer: 42,
         empty_array: [],
         empty_object: {},
-        array: [1, 2, 3, 'test'],
+        array: [1, 2, 3, 'test http://localhost:2000'],
         float: -2.757,
         undefined_var: undefined,
         parent: {

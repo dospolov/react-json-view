@@ -34,6 +34,7 @@
       "nyc": "^15.1.0",
       "prettier": "^2.2.1",
       "react": "^16.14.0",
+      "react-anchorme": "^2.2.1",
       "react-dom": "^16.14.0",
       "react-github-button": "^0.1.11",
       "react-hot-loader": "^4.13.0",

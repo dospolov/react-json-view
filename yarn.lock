@@ -2231,6 +2231,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+anchorme@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/anchorme/-/anchorme-2.1.2.tgz#4abc7e128a8a42d0036a61ebb9b18bbc032fa52a"
+  integrity sha512-2iPY3kxDDZvtRzauqKDb4v7a5sTF4GZ+esQTY8nGYvmhAtGTeFPMn4cRnvyWS1qmtPTP0Mv8hyLOp9l3ZzWMKg==
+
 ansi-colors@4.1.1, ansi-colors@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
@@ -10380,6 +10385,13 @@ raw-body@2.5.1:
     http-errors "2.0.0"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-anchorme@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-anchorme/-/react-anchorme-2.2.1.tgz#234cc1dbb0b6248d34863e4f8e23cec3582c3587"
+  integrity sha512-GvsztP9f4wva7aNZ7pM4tJnUknWnHctksJjsZznIOX+NX6maUrhqokBQnSajVn+1+VfR6ruR1iIF9Hmy5Ky3Fw==
+  dependencies:
+    anchorme "^2.1.2"
 
 react-app-polyfill@^2.0.0:
   version "2.0.0"
