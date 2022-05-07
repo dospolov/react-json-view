@@ -9,6 +9,10 @@ import Theme from './../../themes/getStyle';
 //attribute store for storing collapsed state
 import AttributeStore from './../../stores/ObjectAttributes';
 
+const CustomLink = props => {
+    return <a {...{ style: { color: '#2C84FF' }, ...props }} />;
+};
+
 export default class extends React.PureComponent {
     constructor(props) {
         super(props);
@@ -69,7 +73,11 @@ export default class extends React.PureComponent {
                 >
                     "
                     {
-                        <Anchorme target="_blank" rel="noreferrer noopener">
+                        <Anchorme
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            linkComponent={CustomLink}
+                        >
                             {value}
                         </Anchorme>
                     }
